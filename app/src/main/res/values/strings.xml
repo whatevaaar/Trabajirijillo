@@ -9,6 +9,8 @@
     <string name="calcular">Calcular</string>
     <string name="equal">=</string>
     <string name="matrices">Matrices</string>
-    <string name="fesportada">FesPortada</string>
+    <string name="portada">FesPortada</string>
     <string name="iniciar">Iniciar</string>
+    <string name="title_activity_actividad_matriz_definicion">ActividadMatrizDefinicion</string>
+    <string name="botonCalcular">Calcular</string>
 </resources>
