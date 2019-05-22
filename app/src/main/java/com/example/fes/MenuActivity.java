@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
     private Button btIniciar;
+    private Button botonMatrices;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -17,10 +18,20 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         btIniciar = (Button) findViewById(R.id.buttonEcLineales);
+        botonMatrices = (Button) findViewById(R.id.buttonMatrices);
         btIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuActivity.this,EcuActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+         botonMatrices.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this,ActividadMatrizDefinicion.class);
 
                 startActivity(intent);
             }
