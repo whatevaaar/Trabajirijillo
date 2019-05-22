@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".EcuActivity"></activity>
+        <activity android:name=".Ecu2x2Activity"></activity>
     </application>
 
 </manifest>
