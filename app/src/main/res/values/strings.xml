@@ -3,4 +3,6 @@
     <string name="title_activity_actividad_matriz_definicion">ActividadMatrizDefinicion</string>
     <string name="botonCalcular">Calcular</string>
     <string name="fesportada">FesPortada</string>
+    <string name="title_activity_actividad_matriz_operaciones">ActividadMatrizOperaciones</string>
+    <string name="title_activity_actividad_matriz_operaciones2x2">ActividadMatrizOperaciones2x2</string>
 </resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".MainActivity">
+
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda2x2"
+            app:layout_constraintTop_toBottomOf="@+id/celda1x2" app:layout_constraintStart_toEndOf="@+id/celda2x1"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda2x1"
+            app:layout_constraintTop_toBottomOf="@+id/celda1x1" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda3x1"
+            app:layout_constraintTop_toBottomOf="@+id/celda2x1" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="33dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText12"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toEndOf="@+id/celda3x1" app:layout_constraintEnd_toStartOf="@+id/celda2x3"
+            app:layout_constraintTop_toBottomOf="@+id/celda2x2"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.186"
+            android:layout_marginTop="8dp"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText13"
+            app:layout_constraintStart_toEndOf="@+id/editText12"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.227"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="177dp"
+            android:layout_height="76dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0" android:textSize="30sp" android:text="Operaciones"/>
+    <Button
+            android:text="@string/botonCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonCalcular2x2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda1x1" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/celda2x2" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"/>
+    <EditText
+            android:layout_width="55dp"
+            android:layout_height="37dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda1x2"
+            app:layout_constraintStart_toEndOf="@+id/celda1x1"
+            app:layout_constraintEnd_toStartOf="@+id/celda1x3"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="96dp" app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="36dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda1x3"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.333" android:layout_marginBottom="468dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.978" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"/>
+    <EditText
+            android:layout_width="53dp"
+            android:layout_height="36dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/celda2x3"
+            android:layout_marginEnd="236dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="236dp"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.295" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Determinante"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:id="@+id/determinante" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="216dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.025" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.011"/>
+    <TextView
+            android:text="Traza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/traza" android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.42"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.373" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/determinante"/>
+    <TextView
+            android:text="Traspuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:id="@+id/traspuesta" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/inversa" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintVertical_bias="0.357"/>
+    <TextView
+            android:text="Inversa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inversa" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/traza" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintVertical_bias="0.06"/>
+    <TextView
+            android:layout_width="165dp"
+            android:layout_height="97dp"
+            android:id="@+id/matrizInversa"
+            app:layout_constraintTop_toBottomOf="@+id/inversa" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="168dp" android:layout_marginStart="168dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:layout_width="165dp"
+            android:layout_height="93dp"
+            android:id="@+id/matrizTraspuesta"
+            app:layout_constraintTop_toBottomOf="@+id/traspuesta" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="168dp" android:layout_marginStart="168dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.137"
+            android:layout_marginTop="8dp"/>
+</android.support.constraint.ConstraintLayout>

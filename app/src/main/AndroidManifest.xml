@@ -10,6 +10,16 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".ActividadMatrizOperaciones2x2"
+                android:label="@string/title_activity_actividad_matriz_operaciones2x2"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActividadMatrizOperaciones3x3"
+                android:label="@string/title_activity_actividad_matriz_operaciones"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
                 android:name=".ActividadMatrizDefinicion"
                 android:label="@string/title_activity_actividad_matriz_definicion"
                 android:theme="@style/AppTheme.NoActionBar">

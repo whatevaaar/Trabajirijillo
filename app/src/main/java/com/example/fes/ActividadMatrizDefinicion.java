@@ -18,7 +18,7 @@ public class ActividadMatrizDefinicion extends AppCompatActivity {
         botonCalcular2x2.setText("Calcular 2x2");
         Button botonCalcular3x3 = (Button) findViewById(R.id.botonCalcular3x3);
         botonCalcular3x3.setText("Calcular 2x2");
-        TextView textoTitulo = (TextView) findViewById(R.id.textoTitulo);
+        TextView textoTitulo = (TextView) findViewById(R.id.celda2x2);
         botonCalcular3x3.setText("Matrices");
         TextView textoDefinicion = (TextView) findViewById(R.id.textoDefinicion);
         botonCalcular3x3.setText("Matrices");
@@ -27,11 +27,17 @@ public class ActividadMatrizDefinicion extends AppCompatActivity {
         botonCalcular2x2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PassingDataSourceActivity.this, PassingDataTargetActivity.class);
-                intent.putExtra("message", "This message comes from PassingDataSourceActivity's first button");
+                Intent intent = new Intent(ActividadMatrizDefinicion.this, ActividadMatrizOperaciones2x2.class);
                 startActivity(intent);
             }
         });
 
+        botonCalcular3x3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActividadMatrizDefinicion.this, ActividadMatrizOperaciones3x3.class);
+                startActivity(intent);
+            }
+        });
     }
 }
