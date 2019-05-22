@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">fes</string>
+    <string name="title_activity_actividad_matriz_definicion">ActividadMatrizDefinicion</string>
+    <string name="botonCalcular">Calcular</string>
+    <string name="fesportada">FesPortada</string>
+    <string name="title_activity_actividad_matriz_operaciones">ActividadMatrizOperaciones</string>
+    <string name="title_activity_actividad_matriz_operaciones2x2">ActividadMatrizOperaciones2x2</string>
+    <string name="ecuaciones_lineales">Ecuaciones Lineales</string>
+    <string name="definicion">Definicion .....</string>
+    <string name="_2x2">2x2</string>
+    <string name="_3x3">3x3</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="calcular">Calcular</string>
+    <string name="equal">=</string>
+    <string name="matrices">Matrices</string>
+    <string name="portada">FesPortada</string>
+    <string name="iniciar">Iniciar</string>
+</resources>
