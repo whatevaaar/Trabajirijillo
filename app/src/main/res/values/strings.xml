@@ -16,4 +16,7 @@
     <string name="matrices">Matrices</string>
     <string name="portada">FesPortada</string>
     <string name="iniciar">Iniciar</string>
+    <string name="signomas">(+)</string>
+    <string name="z">Z</string>
+    <string name="signoigual">=</string>
 </resources>

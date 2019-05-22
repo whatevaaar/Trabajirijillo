@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class EcuActivity extends AppCompatActivity {
     private Button btIniciar;
+    private Button btIniciar2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,6 +24,16 @@ public class EcuActivity extends AppCompatActivity {
                 Intent intent = new Intent(EcuActivity.this,Ecu2x2Activity.class);
 
                 startActivity(intent);
+            }
+        });
+
+        btIniciar2 = (Button) findViewById(R.id.button3x3ec);
+        btIniciar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(EcuActivity.this,Ecu3x3Activity.class);
+
+                startActivity(intent2);
             }
         });
     }

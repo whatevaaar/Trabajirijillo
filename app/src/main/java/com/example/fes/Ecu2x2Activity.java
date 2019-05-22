@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Ecu2x2Activity extends AppCompatActivity {
     private Button btIniciar;
@@ -48,13 +49,12 @@ public class Ecu2x2Activity extends AppCompatActivity {
 
     private void calcular() {
         try {
-            int celdax1 = Integer.parseInt(inputx1.getText().toString()); //gets you the contents of edit text
-            int celdax2 = Integer.parseInt(inputx2.getText().toString()); //gets you the contents of edit text
-            int celday1 = Integer.parseInt(inputy1.getText().toString()); //gets you the contents of edit text
-            int celday2 = Integer.parseInt(inputy2.getText().toString()); //gets you the contents of edit text
-            int celdac1 = Integer.parseInt(inputc1.getText().toString()); //gets you the contents of edit text
-            int celdac2 = Integer.parseInt(inputc2.getText().toString()); //gets you the contents of edit text
-
+            double celdax1 = Double.parseDouble(inputx1.getText().toString()); //gets you the contents of edit text
+            double celdax2 = Double.parseDouble(inputx2.getText().toString()); //gets you the contents of edit text
+            double celday1 = Double.parseDouble(inputy1.getText().toString()); //gets you the contents of edit text
+            double celday2 = Double.parseDouble(inputy2.getText().toString()); //gets you the contents of edit text
+            double celdac1 = Double.parseDouble(inputc1.getText().toString()); //gets you the contents of edit text
+            double celdac2 = Double.parseDouble(inputc2.getText().toString()); //gets you the contents of edit text
             textResX.setText("X= " + calcula_determinante(celdax1,celday1,celdac1,celdax2,celday2,celdac2,1));
             textResY.setText("Y= " + calcula_determinante(celdax1,celday1,celdac1,celdax2,celday2,celdac2,2));
 
@@ -62,12 +62,9 @@ public class Ecu2x2Activity extends AppCompatActivity {
             return;
         }
     }
-    protected int calcularXY(int celdax1, int celdax2, int celday1, int celday2,int celdac1, int celdac2, int var){
-        return celdax1 + celdax2;
-    }
 
-    protected  String calcula_determinante(int a,int b, int c, int d, int e, int f, int var){
-        int det,x,y,m;
+    protected  String calcula_determinante(double a,double b, double c, double d, double e, double f, double var){
+        double det,x,y,m;
 
         det=a*e - b*d;
 
@@ -85,8 +82,10 @@ public class Ecu2x2Activity extends AppCompatActivity {
             m = d / a;
             if (m*c==f){
                 return "El sistema tiene infinitas soluciones";
+
+
             }else{
-                return "El sistema no infinitas soluciones";
+                return "El sistema no tiene solucion";
             }
 
         }

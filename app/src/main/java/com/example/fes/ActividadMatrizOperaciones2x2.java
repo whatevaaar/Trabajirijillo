@@ -46,7 +46,7 @@ public class ActividadMatrizOperaciones2x2 extends AppCompatActivity {
             int celda1x1 = Integer.parseInt(inputCelda1x1.getText().toString()); //gets you the contents of edit text
             int celda1x2 = Integer.parseInt(inputCelda1x2.getText().toString()); //gets you the contents of edit text
             int celda2x1 = Integer.parseInt(inputCelda2x1.getText().toString()); //gets you the contents of edit text
-            int celda2x2 = Integer.parseInt(inputCelda2x1.getText().toString()); //gets you the contents of edit text
+            int celda2x2 = Integer.parseInt(inputCelda2x2.getText().toString()); //gets you the contents of edit text
             int determinante = calcularDeterminante(celda1x1,celda2x2, celda1x2, celda2x1);
             textTraza.setText("Traza: " + calcularTraza(celda1x1,celda2x2));
             textMatrizInversa.setText(calcularInversa(celda1x1, celda1x2, celda2x1,celda2x2, determinante));
