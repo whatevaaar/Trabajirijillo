@@ -43,11 +43,11 @@ public class ActividadMatrizOperaciones2x2 extends AppCompatActivity {
     protected void realizarOperaciones(){
 
         try {
-            int celda1x1 = Integer.parseInt(inputCelda1x1.getText().toString()); //gets you the contents of edit text
-            int celda1x2 = Integer.parseInt(inputCelda1x2.getText().toString()); //gets you the contents of edit text
-            int celda2x1 = Integer.parseInt(inputCelda2x1.getText().toString()); //gets you the contents of edit text
-            int celda2x2 = Integer.parseInt(inputCelda2x2.getText().toString()); //gets you the contents of edit text
-            int determinante = calcularDeterminante(celda1x1,celda2x2, celda1x2, celda2x1);
+            double celda1x1 = Double.parseDouble(inputCelda1x1.getText().toString()); //gets you the contents of edit text
+            double celda1x2 = Double.parseDouble(inputCelda1x2.getText().toString()); //gets you the contents of edit text
+            double celda2x1 = Double.parseDouble(inputCelda2x1.getText().toString()); //gets you the contents of edit text
+            double celda2x2 = Double.parseDouble(inputCelda2x2.getText().toString()); //gets you the contents of edit text
+            double determinante = calcularDeterminante(celda1x1,celda2x2, celda1x2, celda2x1);
             textTraza.setText("Traza: " + calcularTraza(celda1x1,celda2x2));
             textMatrizInversa.setText(calcularInversa(celda1x1, celda1x2, celda2x1,celda2x2, determinante));
             textMatrizTraspuesta.setText(calcularTraspuesta(celda1x1,celda1x2, celda2x1, celda2x2));
@@ -57,20 +57,20 @@ public class ActividadMatrizOperaciones2x2 extends AppCompatActivity {
         }
     }
 
-    protected String calcularTraspuesta(int celda1x1, int celda1x2, int celda2x1, int celda2x2){
+    protected String calcularTraspuesta(double celda1x1, double celda1x2, double celda2x1, double celda2x2){
         return celda1x1 + "\t" + celda2x1 + "\n" + celda1x2 + "\t" + celda2x2;
     }
 
-    protected int calcularTraza(int celda1x1, int celda2x2){
+    protected double calcularTraza(double celda1x1, double celda2x2){
         return celda1x1 + celda2x2;
     }
 
-    protected String calcularInversa(int celda1x1, int celda1x2, int celda2x1, int celda2x2, int determinante){
-       int multiplicador = 1/ determinante;
+    protected String calcularInversa(double celda1x1, double celda1x2, double celda2x1, double celda2x2, double determinante){
+       double multiplicador = 1/ determinante;
        return (celda2x2 * multiplicador) + "\t" + (celda1x2 * -1 * multiplicador) + "\n" + (celda2x1 * -1 * multiplicador) + "\t" + (celda1x1 * multiplicador);
     }
 
-    protected int calcularDeterminante(int celda1x1, int celda2x2, int celda2x1, int celda1x2) {
+    protected double calcularDeterminante(double celda1x1, double celda2x2, double celda2x1, double celda1x2) {
         return celda1x1 * celda2x2 - celda1x2 * celda2x1;
     }
 }
