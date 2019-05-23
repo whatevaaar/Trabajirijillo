@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         btIniciar = (Button) findViewById(R.id.buttonIniciar);
         TextView textoDefinicion = (TextView) findViewById(R.id.textViewNombres);
-        textoDefinicion.setText("\tIntegrantes:\n\nGarnica Arriaga Joel Giovanni\nChristian Castro Hernández\nÓscar Mauricio Cortez López\nAlan Alejandro Pérez Gutiérrez " +
-                                "\nPérez Vázquez Arturo\nMorales Pérez Leonardo\nWilliam Brando Estrada Tepec,");
+        textoDefinicion.setText("\tIntegrantes:\n\nEstrada Tepec William Brando\nGarnica Arriaga Joel Giovanni\nCastro Hernández Christian\nCortez López Óscar Mauricio\nPérez Gutiérrez Alan Alejandro" +
+                                "\nPérez Vázquez Arturo\nMorales Pérez Leonardo\nLopez Chaparro Sebastian.");
         btIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -58,7 +58,7 @@ public class ActividadMatrizOperaciones2x2 extends AppCompatActivity {
     }
 
     protected String calcularTraspuesta(double celda1x1, double celda1x2, double celda2x1, double celda2x2){
-        return celda1x1 + "\t" + celda2x1 + "\n" + celda1x2 + "\t" + celda2x2;
+        return celda1x1 + "\t\t" + celda2x1 + "\n" + celda1x2 + "\t\t" + celda2x2;
     }
 
     protected double calcularTraza(double celda1x1, double celda2x2){
@@ -67,7 +67,7 @@ public class ActividadMatrizOperaciones2x2 extends AppCompatActivity {
 
     protected String calcularInversa(double celda1x1, double celda1x2, double celda2x1, double celda2x2, double determinante){
        double multiplicador = 1/ determinante;
-       return (celda2x2 * multiplicador) + "\t" + (celda1x2 * -1 * multiplicador) + "\n" + (celda2x1 * -1 * multiplicador) + "\t" + (celda1x1 * multiplicador);
+       return (celda2x2 * multiplicador) + "\t\t" + (celda1x2 * -1 * multiplicador) + "\n" + (celda2x1 * -1 * multiplicador) + "\t\t" + (celda1x1 * multiplicador);
     }
 
     protected double calcularDeterminante(double celda1x1, double celda2x2, double celda2x1, double celda1x2) {

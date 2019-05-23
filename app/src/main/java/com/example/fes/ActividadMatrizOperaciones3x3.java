@@ -79,9 +79,9 @@ public class ActividadMatrizOperaciones3x3 extends AppCompatActivity {
 
     protected String calcularTraspuesta(double celda1x1, double celda1x2, double celda1x3, double celda2x1, double celda2x2,
                                         double celda2x3, double celda3x1, double celda3x2, double celda3x3) {
-        return celda1x1 + "\t" + celda2x1 + "\t" + celda3x1 + "\n" +
-                celda1x2 + "\t" + celda2x2 + "\t" + celda3x2 + "\n" +
-                celda1x3 + "\t" + celda2x3 + "\t" + celda3x3;
+        return celda1x1 + "\t\t" + celda2x1 + "\t\t" + celda3x1 + "\n" +
+                celda1x2 + "\t\t" + celda2x2 + "\t\t" + celda3x2 + "\n" +
+                celda1x3 + "\t\t" + celda2x3 + "\t\t" + celda3x3;
     }
 
     protected double calcularTraza(double celda1x1, double celda2x2, double celda3x3) {
@@ -100,9 +100,9 @@ double termino2x3 = -1  * calcularCoofactor(celda1x1, celda1x3, celda2x1, celda2
 double termino3x1 =  calcularCoofactor(celda2x1, celda2x2, celda3x1, celda3x2);
 double termino3x2 = -1  * calcularCoofactor(celda1x1, celda1x2, celda3x1, celda3x2);
 double termino3x3 =  calcularCoofactor(celda1x1, celda1x2, celda2x1, celda2x2);
-        return termino1x1 + "\t" + termino2x1 + "\t" + termino3x1 + "\n" +
-                termino1x2 + "\t" + termino2x2 + "\t" + termino3x2 + "\n" +
-                termino1x3 + "\t" + termino2x3 + "\t" + termino3x3;
+        return termino1x1 + "\t\t" + termino2x1 + "\t\t" + termino3x1 + "\n" +
+                termino1x2 + "\t\t" + termino2x2 + "\t\t" + termino3x2 + "\n" +
+                termino1x3 + "\t\t" + termino2x3 + "\t\t" + termino3x3;
     }
 
     protected double calcularCoofactor(double a0, double a1, double b0, double b1) {
